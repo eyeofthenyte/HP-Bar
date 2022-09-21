@@ -1,0 +1,41 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 50px;
+  background: rgb(220, 220, 230); /* so we can see the container */
+}
+
+#healthbar-value {
+  z-index: 9;
+  position: absolute;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  -webkit-text-fill-color: #ccc;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#healthbar {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* 100% default */
+  background: rgb(230,230,230);
+}
